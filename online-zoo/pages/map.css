@@ -1,0 +1,484 @@
+@import "../pages/style.css";
+
+.wr-map {
+    width: 100%;
+    height: 940px;
+    background-color: #EAF7FE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.this-map {
+    position: relative;
+    width: 1083px;
+    height: 714px;
+}
+.this-map img {
+    position: absolute;
+}
+.eagles1 {
+    position: absolute;
+    cursor: pointer;
+    top: 51%;
+    left: 8%;
+}
+.eagles2 {
+    position: absolute;
+    cursor: pointer;
+    top: 58%;
+    left: 11.8%;
+}
+.marker-eagle {
+    fill: #4B9200;
+}
+.marker-eagle:hover {
+    pointer-events:all;
+    fill: #F9804B!important;
+}
+.marker-aligator:hover {
+    pointer-events:all;
+    fill: #F9804B!important;
+}
+.marker-gorilla:hover {
+    pointer-events:all;
+    fill: #F9804B!important;
+}
+.marker-panda:hover {
+    pointer-events:all;
+    fill: #F9804B!important;
+}
+.marker-pandas:hover {
+    pointer-events:all;
+    fill: #F9804B!important;
+}
+.marker-active {
+    pointer-events:all;
+    fill: #F9804B!important;
+}
+.croco {
+    position: absolute;
+    top: 59%;
+    left: 23%;
+}
+.gorilla {
+    position: absolute;
+    top: 70%;
+    left: 49%;
+}
+.panda {
+    position: absolute;
+    top: 46%;
+    left: 75%;
+}
+.pandas {
+    position: absolute;
+    top: 55%;
+    left: 74.7%;
+}
+.pop-up {
+    position: absolute;
+    width: 162px;
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /*background-image: url(../../assets/icons/pop_up.png);*/
+    background-repeat: no-repeat;
+}
+.pop-up-eagles1 {
+    top: 42px;
+    transform: rotate(45deg);
+    left: -107px;
+}
+.pop-up-eagles2 {
+    top: 30px;
+    left: -23px;
+}
+.pop-up-croco {
+    top: 30px;
+    left: -23px;
+}
+.pop-up-gorilla {
+    top: 42px;
+    left: -23px;
+}
+.pop-up-panda {
+    top: 28px;
+    left: 18px;
+    transform: rotate(-38deg);
+}
+.pop-up-pandas {
+    top: 42px;
+    left: -23px;
+}
+.pop-up-pandas,
+.pop-up-panda,
+.pop-up-gorilla,
+.pop-up-croco,
+.pop-up-eagles2,
+.pop-up-eagles1 {
+    position: absolute;
+    display: none;
+}
+.eagles2:hover .pop-up-eagles2,
+.eagles1:hover .pop-up-eagles1,
+.croco:hover .pop-up-croco,
+.gorilla:hover .pop-up-gorilla,
+.panda:hover .pop-up-panda,
+.pandas:hover .pop-up-pandas {
+    display: block;
+}
+.watch-online {
+    font-family: "Roboto_400";
+    font-size: 16px;
+    line-height: 140%;
+    color: #4B9200;
+    width:135,75px;
+    height:31px;
+    background: #F1F3F2;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.watch-online:hover {
+    background: #4B9200;
+    color: #FFFFFF;
+}
+.pop-up p {
+    font-family: "Roboto_400";
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+    margin: 0;
+    z-index: 100;
+}
+.pop-up p:first-of-type {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.pop-up p {
+    margin-left: 10px;
+}
+.pop-up-description {
+    z-index: 100;
+}
+.map-buttons-block {
+    position: absolute;
+    left: 95%;
+    bottom: 40px;
+    width: 54px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.map-buttons-block a {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 54px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.map-buttons-block a svg {
+    border: none;
+    fill: #333B41;
+}
+.map-buttons-block a:hover svg path {
+    fill: #4B9200;
+}
+.map-buttons-block a:hover {
+    border: 1px solid #4B9200;
+}
+#pandas-mark {
+    position: absolute;
+    top: -22%;
+    right: -32%;
+}
+.pandas {
+    width: 50px;
+    height: 50px;
+}
+/*.croco img {
+    width: 75px;
+
+  } */ 
+@media (max-width:1160px) {
+    .wr-map{
+        width: 100%;
+        height: 751px;
+
+    }
+    .map-map {
+        width: 938px;
+    }
+    .this-map {
+        width: 100%;
+        height: 618px;
+        margin-left: 5px;
+        margin-top: -43px;
+    }
+    /*.this-map img {
+        width: 938px;
+    }*/
+    .map-buttons-block {
+        left: 92%;
+        top: 82%;
+    }
+   /* .pandas {
+        top: 63%;
+        left: 74.5%;
+    }
+    .panda {
+        top: 53%;
+    }
+    .gorilla {        
+        top: 77.5%;
+        left: 50%;
+    }
+    .croco {
+        top: 66%;
+    }
+    .eagles1 {
+        top: 59%;
+    }
+    .eagles2 {
+        top: 64%;
+    }*/
+}
+@media (max-width: 940px) {
+    .container-custom {
+        width: 95%;
+    }
+    .this-map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 594.28px;
+    }
+    /*.this-map img {
+        width: 594.28px;
+        height: 689px;
+    }*/
+    .map-buttons-block {
+        display: none;
+    }
+    .panda {
+        top: 47%;
+    }
+    .panda img {
+        width: 20px;
+    }
+    .pandas {
+        top: 54%;
+    }
+    .pandas img {
+        width: 24px;
+    }
+    .this-map a {
+        width: 30px;
+        height: 30px;
+    }
+    .gorilla {
+        top: 63.5%;
+    }
+    .gorilla img {
+        width: 27px;
+    }
+    .croco {
+        top: 57%;
+        left: 22.5%;
+    }
+    .croco img {
+        width: 42px;
+    }
+    .eagles1 {
+        top: 53%;
+    }
+    .eagles1 img {
+        width: 25px;
+    }
+    .eagles2 {
+        top: 56%;
+    }
+    .eagles2 img {
+        width: 29px;
+    }
+}
+@media (max-width: 800px) {
+
+}
+
+@media (max-width:640px) {
+    .wr-preview {
+        height: auto;
+    }
+    .wr-map {
+        width: 100%;
+        height: 508px;
+        overflow:hidden;
+    }
+    .wr-header {
+        width: 100%;
+    }
+    .map-map {
+        width: 640px;
+    }
+    .this-map {
+        margin-top: 11%;
+    }
+    .this-map svg {
+        width: 594.28px;
+        height: 689px;
+    }
+    .map-buttons-block {
+        display: none;
+    }
+    .panda {
+        top: 54%;
+        left: 77%;
+    }
+    .panda img {
+        width: 20px;
+    }
+    .pandas {
+        top: 47%;
+        left: 77%;
+    }
+    .pandas img {
+        width: 24px;
+    }
+    .this-map a {
+        width: 30px;
+        height: 30px;
+    }
+    .gorilla {
+        top: 70%;
+    }
+    .gorilla img {
+        width: 27px;
+    }
+    .croco {
+        top: 59%;
+        left: 20%;
+    }
+    .croco img {
+        width: 42px;
+    }
+    .eagles1 {
+        top: 51.5%;
+        left: 5%;
+    }
+    .eagles1 img {
+        width: 25px;
+    }
+    .eagles2 {
+        top: 56%;
+        left: 8%;
+    }
+    .eagles2 img {
+        width: 29px;
+    }
+}
+@media (max-width: 595px) {
+    .this-map {
+        width: 400px;
+    }
+    .this-map svg {
+        width: 400.28px;
+        height: 689px;
+    }
+    .footer-content:nth-of-type(2)  {
+        width: 200px;
+    }
+    .subtext {
+        font-size: 8px;
+    }
+}
+@media (max-width:320px){
+    .wr-map {
+        position: relative;
+        width: 100%;
+        height: 359px;
+    }
+    .wr-header {
+        width: 100%;
+    }
+    .map-map {
+        width: 320px;
+    }
+    .this-map {
+        width: 100%;
+    }
+    .this-map svg {
+        width: 485.64px;
+        height: 277px;
+        position: absolute;
+        left: -77px;
+        top: 36px;
+    }
+    .panda {
+        left: 89%;
+        top: 50%;
+    }
+    .panda img {
+        width: 14px;
+    }
+    .pandas {
+        left: 87%;
+        top: 58%;
+    }
+    .pandas img {
+        width: 18px;
+    }
+    .gorilla {
+        top: 70.2%;
+        left: 54%;
+    }
+    .gorilla img {
+        width: 20px;
+    }
+    .eagles1 {
+        top: 51%;
+        left: 2%;
+    }
+    .eagles1 img {
+        width: 18px;
+    }
+    .eagles2 {
+        left: 6%;
+        top: 55%;
+    }
+    }
+    .eagles2 svg {
+        width: 22px;
+    }
+    .croco {
+        top: 60%;
+        left: 20%;
+    }
+   /* .croco img {
+        width: 29px;
+    }*/
+    .footer-content:nth-of-type(2)  {
+        width: 298px;
+    }
+    .subtext {
+        font-size: 16px;
+    }
+}
